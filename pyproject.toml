@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "demo-cli"
+version = "0.1.0"
+description = ""
+authors = []
+readme = "README.md"
+#package-mode = true
+packages = [
+    { include = "demo_cli" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.scripts]
+demo-cli = "demo_cli.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
